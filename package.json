@@ -1,0 +1,19 @@
+{
+  "name": "marketmate-mvp",
+  "version": "1.0.0",
+  "description": "MarketMate is an e-commerce web application designed to empower online businesses by providing a platform for buyers and sellers to connect, browse products, and facilitate transactions. With MarketMate, buyers can easily explore a wide range of products, add items to their cart, and complete purchases using convenient payment methods such as M-pesa and Airtel Money. Sellers can list their products with detailed descriptions, images, and prices, manage orders, and receive notifications for new purchases.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Margaret-KE/marketmate-mvp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Margaret-KE/marketmate-mvp/issues"
+  },
+  "homepage": "https://github.com/Margaret-KE/marketmate-mvp#readme"
+}
