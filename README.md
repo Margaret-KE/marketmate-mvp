@@ -62,4 +62,4 @@ MarketMate is an e-commerce web application designed to empower online businesse
 
 1. Clone the repository:
    ```sh
-   git clone https://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@github.com/Margaret-KE/marketmate-mvp.git
+   git clone <repository-url>
