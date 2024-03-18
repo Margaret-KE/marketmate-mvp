@@ -3,17 +3,19 @@
 from flask import Flask, jsonify, request, redirect, url_for, flash, session, render_template
 from werkzeug.security import generate_password_hash, check_password_hash
 from functools import wraps
+import os
+from dotenv import load_dotenv
 import pymysql.cursors
 import database_operations
 
-app = Flask(__name__)
-app.secret_key = 'your_secret_key'
+# Load environment variables from .env file
+load_dotenv()
 
 # Database configuration
-DB_HOST = 'localhost'
-DB_USER = 'your_username'
-DB_PASSWORD = 'your_password'
-DB_NAME = 'your_database_name'
+DB_HOST = os.getenv('DB_HOST')
+DB_USER = os.getenv('DB_USER')
+DB_PASSWORD = os.getenv('DB_PASSWORD')
+DB_NAME = os.getenv('DB_NAME')
 
 # Connect to the database
 connection = pymysql.connect(host=DB_HOST,
@@ -21,6 +23,9 @@ connection = pymysql.connect(host=DB_HOST,
                              password=DB_PASSWORD,
                              database=DB_NAME,
                              cursorclass=pymysql.cursors.DictCursor)
+
+app = Flask(__name__)
+app.secret_key = 'your_secret_key'
 
 # Authentication decorator
 def login_required(f):
@@ -81,3 +86,4 @@ def products():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
