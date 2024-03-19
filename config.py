@@ -1,7 +1,7 @@
 DATABASE_HOST = 'localhost'
 DATABASE_PORT = 3306
 DATABASE_USER = 'margaret'
-DATABASE_PASSWORD = 'Wa2024'
+DATABASE_PASSWORD = 'password'
 DATABASE_NAME = 'marketmate'
 
 class Config:
