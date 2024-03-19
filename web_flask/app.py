@@ -4,7 +4,7 @@ from flask import Flask, jsonify, request, redirect, url_for, flash, session, re
 from werkzeug.security import generate_password_hash, check_password_hash
 from functools import wraps
 import os
-from dotenv import load_dotenv
+from python_dotenv import load_dotenv  # Importing load_dotenv from python_dotenv
 import pymysql.cursors
 import database_operations
 
