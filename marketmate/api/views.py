@@ -23,5 +23,18 @@ def get_product(request, product_id):
     else:
         return JsonResponse({"error": "Product not found"}, status=404)
 
-# Other view functions for your API endpoints go here...
+# New view to retrieve the user's cart
+def get_cart(request):
+    # Placeholder logic to retrieve the user's cart
+    cart = [
+        {"product_id": 1, "name": "Product 1", "quantity": 2},
+        {"product_id": 2, "name": "Product 2", "quantity": 1},
+    ]
+    return JsonResponse(cart, safe=False)
+
+# New view to add a product to the cart
+def add_to_cart(request):
+    # Placeholder logic to add a product to the user's cart
+    # This view will handle POST requests
+    return JsonResponse({"message": "Product added to cart successfully"})
 
