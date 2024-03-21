@@ -1,4 +1,4 @@
-#!/home/ubuntu/marketmate-mvp/myenv/bin/python3
+#!/marketmate-mvp/myenv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
