@@ -1,5 +1,6 @@
 # marketmate/api/views.py
 
+from django.shortcuts import render  # Import render function to render templates
 from django.http import JsonResponse
 from .models import Product  # Assuming you have a Product model defined in models.py
 from django.views.decorators.csrf import csrf_exempt  # Only if you want to disable CSRF protection
@@ -38,3 +39,6 @@ def add_to_cart(request):
     # This view will handle POST requests
     return JsonResponse({"message": "Product added to cart successfully"})
 
+# New view to render the index.html template
+def index(request):
+    return render(request, 'index.html')  # Assuming index.html is located in the templates directory of the api app
