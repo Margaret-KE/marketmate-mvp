@@ -15,3 +15,8 @@ urlpatterns = [
     path('apply_discount/', views.apply_discount, name='apply_discount'),
 ]
 
+urlpatterns = [
+    path('login/', views.login_view, name='login'),
+    path('register/', views.register_view, name='register'),
+    # Add more URL patterns as needed
+]

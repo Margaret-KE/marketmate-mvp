@@ -94,3 +94,28 @@ def calculate_total_amount(cart_items):
     total_amount = sum(item['price'] for item in cart_items)
     return total_amount
 
+def login_view(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            messages.success(request, 'Logged in successfully')
+            return redirect('index')  # Redirect to the index page after login
+        else:
+            messages.error(request, 'Invalid username or password')
+    return render(request, 'index.html')  # Render the index.html template for GET requests
+
+def register_view(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        if not database_operations.get_user_by_username(username):
+            database_operations.add_user(username, email, password)
+            messages.success(request, 'Account created successfully. Please log in.')
+            return redirect('login')
+        else:
+            messages.error(request, 'Username already exists. Please choose a different one.')
+    return render(request, 'index.html')  # Render the index.html template for GET requests
