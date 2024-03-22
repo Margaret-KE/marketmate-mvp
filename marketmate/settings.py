@@ -49,3 +49,24 @@ DATABASES = {
         'PORT': os.getenv('DB_PORT', '3306'),
     }
 }
+
+# Define the template directory
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                ...
+            ],
+        },
+    },
+]
+
+# Define the static file directory
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'web_static'),
+]
+
