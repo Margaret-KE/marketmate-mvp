@@ -8,6 +8,9 @@ class LoginSession(models.Model):
     login_time = models.DateTimeField(auto_now_add=True)
     logout_time = models.DateTimeField(null=True, blank=True)
 
+    class Meta:
+        app_label = 'login'
+
     def __str__(self):
         return f"Session for {self.user.username}"
 
