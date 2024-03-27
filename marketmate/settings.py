@@ -2,6 +2,8 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 SECRET_KEY = 'atn8zhb+vcskzk10sc@rr$-#x3u7r!tq_aifm1dmgf6&et$&@x'
 
 DEBUG = True
