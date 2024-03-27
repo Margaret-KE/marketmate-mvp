@@ -6,7 +6,7 @@ SECRET_KEY = 'atn8zhb+vcskzk10sc@rr$-#x3u7r!tq_aifm1dmgf6&et$&@x'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '54.152.45.175']
 
 STATIC_URL = '/static/'
 
