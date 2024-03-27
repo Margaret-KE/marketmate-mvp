@@ -1,6 +1,7 @@
 # marketmate/login/models.py
 
 from django.db import models
+from django.contrib.auth.models import User
 
 class LoginSession(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
