@@ -24,9 +24,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Add your apps here
     # 'your_app_name',
+    'api',
+    'auth',
+    'login',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
