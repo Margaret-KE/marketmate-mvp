@@ -23,21 +23,21 @@ jobs:
 
     - name: Install backend dependencies
       run: npm install
-      working-directory: marketmate-mvp/marketmate
+      working-directory: ./
 
     - name: Run backend tests
       run: npm test
-      working-directory: marketmate-mvp/marketmate
+      working-directory: ./
 
     - name: Install frontend dependencies
       run: npm install
-      working-directory: marketmate-mvp/web_static
+      working-directory: ./web_static
 
     - name: Run frontend tests
       run: npm test
-      working-directory: marketmate-mvp/web_static
+      working-directory: ./web_static
 
     - name: Build frontend
       run: npm run build
-      working-directory: marketmate-mvp/web_static
+      working-directory: ./web_static
 
