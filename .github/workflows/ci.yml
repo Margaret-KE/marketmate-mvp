@@ -22,22 +22,22 @@ jobs:
         node-version: '20'
 
     - name: Install backend dependencies
-      run: npm install
       working-directory: ./backend
+      run: npm install
 
     - name: Run backend tests
-      run: npm test
       working-directory: ./backend
+      run: npm test
 
     - name: Install frontend dependencies
-      run: npm install
       working-directory: ./frontend
+      run: npm install
 
     - name: Run frontend tests
-      run: npm test
       working-directory: ./frontend
+      run: npm test
 
     - name: Build frontend
-      run: npm run build
       working-directory: ./frontend
+      run: npm run build
 
