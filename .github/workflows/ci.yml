@@ -23,9 +23,11 @@ jobs:
 
     - name: Install backend dependencies
       run: npm install
+      working-directory: marketmate/backend
 
     - name: Run backend tests
       run: npm test
+      working-directory: marketmate/backend
 
     - name: Install frontend dependencies
       run: npm install
