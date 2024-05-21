@@ -33,7 +33,7 @@ jobs:
         working-directory: ./
 
       - name: Run backend tests
-        run: node --max-old-space-size=4096 node_modules/.bin/jest
+        run: npm test
         working-directory: ./
 
   frontend:
@@ -60,7 +60,7 @@ jobs:
         working-directory: ./web_static
 
       - name: Run frontend tests
-        run: node --max-old-space-size=4096 node_modules/.bin/jest
+        run: npm test
         working-directory: ./web_static
 
       - name: Build frontend
