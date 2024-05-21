@@ -19,7 +19,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16' # Adjusted to use Node.js 16 to avoid potential compatibility issues
+        node-version: '20' # Update to Node.js version 20
 
     - name: Install backend dependencies
       run: npm install
