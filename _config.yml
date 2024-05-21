@@ -1,0 +1,39 @@
+# Site settings
+title: MarketMate MVP
+description: >
+  MarketMate is an e-commerce web application designed to empower online businesses by providing a platform for buyers and sellers to connect, browse products, and facilitate transactions.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Author settings
+author:
+  name: "Your Name"
+  email: "your-email@example.com"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
+
+# Permalinks
+permalink: /:categories/:year/:month/:day/:title.html
+
+# Pagination
+paginate: 10
+paginate_path: "/page/:num/"
+
