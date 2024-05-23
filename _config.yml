@@ -2,8 +2,8 @@
 title: MarketMate MVP
 description: >
   MarketMate is an e-commerce web application designed to empower online businesses by providing a platform for buyers and sellers to connect, browse products, and facilitate transactions.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/marketmate-mvp" # the subpath of your site, e.g. /blog
+url: "https://margaret-ke.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
