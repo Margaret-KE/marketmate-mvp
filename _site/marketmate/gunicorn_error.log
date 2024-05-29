@@ -1,0 +1,7 @@
+[2024-03-28 00:23:34 +0000] [44075] [INFO] Starting gunicorn 21.2.0
+[2024-03-28 00:23:34 +0000] [44075] [INFO] Listening at: http://0.0.0.0:8000 (44075)
+[2024-03-28 00:23:34 +0000] [44075] [INFO] Using worker: sync
+[2024-03-28 00:23:34 +0000] [44077] [INFO] Booting worker with pid: 44077
+[2024-03-28 00:24:15 +0000] [44075] [INFO] Handling signal: int
+[2024-03-28 00:24:15 +0000] [44077] [INFO] Worker exiting (pid: 44077)
+[2024-03-28 00:24:15 +0000] [44075] [INFO] Shutting down: Master

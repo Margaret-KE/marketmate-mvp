@@ -1,0 +1,34 @@
+{
+  "name": "marketmate-mvp",
+  "version": "1.0.0",
+  "description": "MarketMate is an e-commerce web application designed to empower online businesses by providing a platform for buyers and sellers to connect, browse products, and facilitate transactions. With MarketMate, buyers can easily explore a wide range of products, add items to their cart, and complete purchases using convenient payment methods such as M-pesa and Airtel Money. Sellers can list their products with detailed descriptions, images, and prices, manage orders, and receive notifications for new purchases.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --max-old-space-size=8192 ./node_modules/.bin/jest --maxWorkers=1 --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Margaret-KE/marketmate-mvp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Margaret-KE/marketmate-mvp/issues"
+  },
+  "homepage": "https://github.com/Margaret-KE/marketmate-mvp#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "@babel/preset-react": "^7.18.0",
+    "babel-jest": "^29.0.0",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/jest-dom": "^5.16.0",
+    "@testing-library/user-event": "^13.5.0"
+  }
+}
+
