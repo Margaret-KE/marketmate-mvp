@@ -16,12 +16,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up Python
+    - name: Set up Node.js 20
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'
+
+    - name: Set up Python 3.x
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'  # Specify the required Python version
+        python-version: '3.x'
 
-    - name: Set up Ruby
+    - name: Set up Ruby 3.1
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.1'
@@ -43,4 +48,5 @@ jobs:
         # Add commands to run your tests, for example:
         # bundle exec rspec
         echo "Tests go here"
+
 
