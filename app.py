@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, render_template, redirect, url_for
 
 app = Flask(__name__)
@@ -13,4 +14,8 @@ def signup():
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Get the port from the PORT environment variable, defaulting to 5000
+    port = int(os.environ.get('PORT', 5000))
+    # Run the app on all available IP addresses and the retrieved port
+    app.run(host='0.0.0.0', port=port, debug=True)
+
